@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+	<title>Tarjetas de estudiantes</title>
+	<link rel="stylesheet" href="estilos.css" />
+	<script src="jquery.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<form id="nuevo">
+		<h1>Agrega un nuevo estudiante</h1>
+		<section>
+			<label for="nombre">Nombre</label>
+			<input type="text" id="nombre" 
+				placeholder="Nombre del estudiante"
+				required />
+			<select id="curso">
+				<option>Curso de programación</option>
+				<option>Curso de jQuery</option>
+			</select>
+			<div id="sexos">
+				<input type="radio" value="Masculino" 
+						name="sexo" id="masradio" checked />
+				<label for="masradio">Masculino</label>
+				<input type="radio" value="Femenino" 
+						name="sexo" id="femradio" />
+				<label for="femradio">Femenino</label>
+			</div>
+			<input type="submit" id="agregar" 
+					value="Agregar" />
+		</section>
+		<input id="limpiar" type="button" 
+			value="Limpiar (╯°□°）╯︵ ┻━┻" />
+		<!-- <input id="recargar" type="button" 
+			value="Recargar (づ｡◕‿‿◕｡)づ" /> -->
+	</form>
+	<section id="tarjetas">
+		<article class="tarjeta" id="original">
+			<h2 id="nombre_tarjeta">Nombre de estudiante</h2>
+			<p id="curso_tarjeta">Curso del estudiante</p>
+			<p>Sexo: <span id="sexo_tarjeta">Femenino</span></p>
+		</article>
+	</section>
+</body>
+</html>
